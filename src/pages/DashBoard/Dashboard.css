@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(to right, rgba(255, 229, 0, 0.4), rgba(247, 255, 154, 0.4));
+}
+.card{
+    height: 300px;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(218, 227, 243);    
+}
+.card .imageDashboard{
+width: 50%;
+margin-top: 30px ;
+margin-bottom: 30px;
+padding-left: 25%;
+filter: drop-shadow(-10px 20px 5px rgba(11, 3, 3, 0.585));
+}
+.card .productdetails{
+width: 750px;
+height: 170px;
+padding-top: 2%;
+padding-bottom: 5%;
+margin-top: 5% ;
+margin-bottom: 5%;
+margin-right: 5%;
+background-color: rgba(255, 255, 255, 0.5) ;
+border-radius: 30px;
+box-shadow: 0 4px 8px rgba(38, 2, 2, 0.453); 
+}
+
+.card .productName{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card .PI{
+    width: 100%;
+    height:90% ;
+    margin-top: -20px;
+    align-items:center;
+    display: flex;
+    justify-content: space-around;
+}
+.card .pdf{
+    width: 23%;
+    height: 47%;
+    margin-left: 7%;
+    margin-right: 11%;
+
+}
+.card .productdeDescription{
+    width: 100%;
+    font-size: 18px;
+    padding-left: 10%;
+    padding-right: 6%;
+
+} 
+.card .icons{
+    width: 10%;
+    justify-content: space-between;
+
+}
+.card .iconimage{
+    width: 70%;
+    padding-bottom: 0%;
+    margin-top: 40%;
+    margin-left: 18%;
+    margin-right: 10%;
+}
+.card .nameicons{
+    margin-left: 29%;
+    margin-right: 10%;
+}
