@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import './Home.css'
+import '../../components/footer/footer.css'
+// import footer from "../../components/footer/Foote";
  
 function Home() {
   return (
@@ -14,7 +17,7 @@ function Home() {
         <img
           src={require("../../Assets/FB_IMG_1623860301911.jpg")}
           alt="منتج اول"
-          className="img<div style={{ backgroundColor: }} "
+          className="img2 "
         />
         <h2 className="fonttheh">Discover Our Selection of Products</h2>
         <div className="img2 div222">
@@ -31,8 +34,9 @@ function Home() {
           </div>
         </div>
         {/* footer */}
-        </div>
       </div>
+    {/* </Footer>   */}
+    </div>
   );
 }
 

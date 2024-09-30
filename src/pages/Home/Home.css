@@ -48,12 +48,3 @@
     margin-top: 20%;
     background-color: rgb(211, 204, 196);
 }
-.footer{
-    display: flex;
-    justify-content: space-around;
-}
-.linkk{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-.d1{line-height: 5px;}

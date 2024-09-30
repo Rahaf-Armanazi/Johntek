@@ -1,20 +1,29 @@
-.header{
-    position: fixed;
-    box-shadow: 4px 14px 54px rgb(123 119 119);
-    top: 0;
-    left: 80px;
-    right: 80px;
-    padding: 9px 10%;
-    background: rgb(189 204 216);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+.header {
+  position: fixed;
+  box-shadow: 4px 14px 54px rgb(123 119 119);
+  top: 0;
+  margin: -0.5%;
+  width: 100%;
+  padding: 9px 50px;
+  background: rgb(189 204 216);
+  display: flex;
+  align-items: center;
+  z-index: 100;
 }
-.linksss{
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    font-size: 18px;
-    margin-left: 40px;
+.Transfers {
+  padding-left: 60%;
+}
+.linksss {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 40px;
+}
+.inputname {
+  margin-top: 3.2%;
+  right: 12%;
+  height: 35%;
+  display: flex;
+  position: absolute;
 }
