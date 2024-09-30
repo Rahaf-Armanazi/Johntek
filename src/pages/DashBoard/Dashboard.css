@@ -7,6 +7,7 @@ body {
     margin-right: 0%;
     margin-top: 5%;
     display: flex;
+    border-radius: 20px;
     align-items: center;
     background-color: rgba(218, 227, 243);    
 }
@@ -62,17 +63,26 @@ box-shadow: 0 4px 8px rgba(38, 2, 2, 0.453);
 } 
 .card .icons{
     width: 10%;
-    justify-content: space-between;
+    cursor: pointer;
+    
 
 }
 .card .iconimage{
     width: 70%;
     padding-bottom: 0%;
     margin-top: 40%;
-    margin-left: 18%;
+    margin-left: -12%;
     margin-right: 10%;
 }
-.card .nameicons{
-    margin-left: 29%;
+
+
+.card .nameicons1{
+    margin-left: 4%;
     margin-right: 10%;
+    margin-top: 7%;
+}
+.card .nameicons2 {
+    margin-left: -4%;
+    margin-right: 10%;
+    margin-top: 8%;
 }

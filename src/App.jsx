@@ -1,11 +1,13 @@
 import DashBoard from "./pages/DashBoard/DashBoard";
- 
+import AddProduct from "./pages/AddProduct/AddProduct";
 export default function App() {
     return (
         <div >
-          {/* <h1>رسم دالة الجيب باستخدام React</h1> */}
-          <DashBoard/>
+          <AddProduct/>
+ <br />
+ <br />
           <DashBoard/><DashBoard/><DashBoard/>
+
         </div>
       );
 }
