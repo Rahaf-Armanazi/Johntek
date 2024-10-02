@@ -1,42 +1,51 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import './Home.css'
-import '../../components/footer/footer.css'
+import React from "react";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import "./Home.css";
+import "../../components/Footer/Footer.css";
 // import footer from "../../components/footer/Foote";
- 
+import Logo from "../../Assets/logo.png"; // تأكد من أن المسار صحيح
+import names from "../../Assets/names.png";
+
 function Home() {
   return (
     <div className="homepage">
-      <div className="padd">
-        <img
-          src={require("../../Assets/٢٠٢٠٠٧٠٣_٠١٢٢٢٣.jpg")}
-          alt="الشعار"
-          className="img1"
-        />
-        <h2 className="fonttheh">Our Commitment to Excellence</h2>
-        <img
-          src={require("../../Assets/FB_IMG_1623860301911.jpg")}
-          alt="منتج اول"
-          className="img2 "
-        />
-        <h2 className="fonttheh">Discover Our Selection of Products</h2>
-        <div className="img2 div222">
+      <Header />
+        <div className="logo">
+          <img src={Logo} alt="Logo" width="230" height="230" />
           <img
-            src={require("../../Assets/FB_IMG_1623860226429.jpg")}
+            src={names}
+            alt="name"
+            className="name1"
+            width="600"
+            height="150"
+          />
+        </div>
+        <h2 className="font-the-h">Our Commitment to Excellence</h2>
+        <img
+          src={require("../../Assets/12.jpg")}
+          alt="_صورة اول"
+          className="imgshome "
+        />
+        <h2 className="font-the-h" style={{marginTop:"10%"}}>Discover Our Selection of Products</h2>
+        <div className="imgshome div222">
+          <img
+            src={require("../../Assets/big4.jpg")}
             alt="منتج تاني"
-            className=" iii2"
+            className="half"
           />
           <div>
-            <h2 className="font_h-ener">
-              Quality Valves for Every Application
-            </h2>
-            <button className="btn1">Products</button>
+            <div>
+              <h2 className="font_h-ener">
+                Quality Valves for
+                Every Application
+              </h2>
+            </div>
+          <button className="btn1">Products</button>
           </div>
         </div>
-        {/* footer */}
+        <Footer/>
       </div>
-    {/* </Footer>   */}
-    </div>
   );
 }
 

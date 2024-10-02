@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./footer.css";
+import "./Footer.css";
 function Footer() {
   return (
     <div>
-      <div className="footer">
+      <div className="allfooter">
         <div className="d1">
           <Link to="#" className="linkk">
             <h3>Johntek Valves</h3>
@@ -47,7 +47,7 @@ function Footer() {
           display: "flex" ,
           justifyContent: "space-between" ,
           padding: "0 20px" ,
-          margin: "-0.5%" ,
+          margin: "-6% -0.5%" ,
           background: "rgb(189 204 216)" ,
         }}
       >

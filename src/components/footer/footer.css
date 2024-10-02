@@ -1,8 +1,8 @@
-.footer{
+.allfooter{
     background-color: rgb(189 204 216);
     display: flex;
     justify-content: space-around;
-    margin: -0.5%;
+    margin: 5% -0.5%;
 }
 .linkk{
     text-decoration: none;
