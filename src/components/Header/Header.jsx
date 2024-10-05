@@ -24,7 +24,7 @@ function Header() {
         <Link to="/" className="linksss">Home</Link>
         <Link to="/Products" className="linksss">Products</Link>
         <Link to="/aboutUs" className="linksss">About Us</Link>
-        <Link to="/aboutUs" className="linksss">Terms of service</Link>
+        <Link to="/Terms" className="linksss">Terms of service</Link>
         <Link to="/aboutUs" className="linksss">Privacy policy</Link>
           <i className="fas fa-search linksss" onClick={handleSearchClick}></i> 
       {showInput && (
