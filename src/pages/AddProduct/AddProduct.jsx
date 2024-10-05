@@ -1,9 +1,7 @@
-// import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import Modal from "react-modal";
 import React, { useState } from "react";
-import { faTrash, faEdit } from "@fortawesome/free-solid-svg-icons";
+import { faPlus ,faTimes,faSave } from "@fortawesome/free-solid-svg-icons";
 import "./Add.css";
 
 Modal.setAppElement("#root"); // لتجنب مشاكل الوصول في React
@@ -32,29 +30,31 @@ function Add() {
 
           <div className="p4">
             <label id="p3"> Product Name :</label>
-            <input type="text" placeholder=" Please enter the product name. " className="p5"  id="p1"/>
+            <input type="text" placeholder=" Please enter the product name.
+             " className="p5"  id="p1"/>
           </div>
           <div className="p4">
             <label id="p4">Product Description :</label>
-            <input type="text" placeholder=" Please enter product description " className="p5" id="p2"/>
+            <input type="text" placeholder=" Please enter product description "
+             className="p5" id="p2"/>
           </div >
 
           <div className="p2">
-           <div> Upload file Pdf : </div>
-           <div><input type="file" accept=".pdf"  /></div> 
-           <div> Upload image :</div>
-           <div> <input type="file" accept="image/*"  /></div>
+           <span> Upload file Pdf : </span>
+           <input type="file" accept=".pdf"  />
+           <span> Upload image :</span>
+           <input type="file" accept="image/*"  />
           </div></div>
     
         <div className="p3">
         <div className="iconimage">
-          <FontAwesomeIcon icon={faEdit} size="4x" />
-          <p className="nameicons1">Edit</p>
+          <FontAwesomeIcon icon={faTimes} size="3x" />
+          <p className="nameicons1"> Exit</p>
         </div>
         
         <div className="iconimage">
-          <FontAwesomeIcon   icon={faTrash} size="4x" /> 
-          <p className="nameicons2" >Delete</p>
+          <FontAwesomeIcon   icon={faSave} size="3x" /> 
+          <p className="nameicons2" > Save</p>
       </div>
         </div>
        

@@ -1,4 +1,4 @@
-.add{
+/* .add{
 background-color:rgba(218, 227, 243);
 border-radius: 30px;
 float : right; 
@@ -6,36 +6,30 @@ display: flex;
 align-items: center;
 cursor: pointer;
 justify-content: space-between;
-padding: 0px 11px;
-margin: 5px 30px;
+padding: 1%;
+margin: 0.5% 3%;
 border: none;
 }
 .add:hover {
     background-color: #c4cd88;
   }
-  
-
  h2{
     margin-left:14px;
     margin-right: 20px;
     font-size: 24px;
  }
- 
-/* 
-
-*/
 .popupWindow {
-    background-color:rgba(218, 227, 243);
-    padding: 40px;
+    background-color: rgba(218, 227, 243);
+    padding: 4%;
     max-width: 80%;
     max-height: 80%;
-    width: 661px;
-    height: 450px;
+    width: 60%;
+    height: 88%;
     margin: auto;
-    border-radius: 24px;
-    overflow-y: auto; 
-  }
-.modal-overlay {
+    border-radius: 2%;
+    /* overflow-y: auto;*/
+  
+/* .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -53,17 +47,20 @@ border: none;
     gap: 39px;
     border-radius: 20px;
     background-color: #fefeffba;
-    margin: -18px -13px;
-    padding: 14px 11px;
+    margin: -1% -1%;
+    padding: 1% 1%;
 }
+
 .p2{
- display: flex;
- /* background-color: aqua; */
- margin-left: 1px;
- margin-right: -67px;
- padding-top: 22px;
- padding-bottom: 20px;
-}
+    display: flex;
+    background-color: aqua;
+    margin-left: 1%;
+    margin-right:1%;
+    /* paddig-top: 2%; */
+    /* padding-bottom: 2%;
+    justify-content: space-between;
+     */
+/* }
 .p3{
     margin-left: 100px;
     margin-right: 100px;
@@ -71,8 +68,8 @@ border: none;
     margin-bottom: -30px;
     display: flex;
     justify-content: space-between;
-}
-.p3 .nameicons1{
+} */
+/* .p3 .nameicons1{
     margin: 9px 14px;
 }
 .p3 .nameicons2{
@@ -82,8 +79,8 @@ border: none;
     display: flex;
     justify-content: center;
     text-align: center;
-}
- .p1 .p4{
+} */
+ /* .p1 .p4{
     display: flex;
     justify-content: space-between;
     margin: 2px 53px;
@@ -102,4 +99,4 @@ border: none;
 }#p4    {
     padding-top: 3%;
     padding-bottom: 3%;
-}
+} */ 

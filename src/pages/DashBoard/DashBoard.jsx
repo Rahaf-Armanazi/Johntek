@@ -3,8 +3,8 @@ import "./Dashboard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // استيراد المكون
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons';  // استيراد أيقونة محددة
 import { faTrash, faEdit } from "@fortawesome/free-solid-svg-icons"; // استيراد الأيقونات
-import p4 from "../../Assets/p4.png";
-import p5 from "../../Assets/download.png";
+import p4 from "../../Assets/image_2024-09-23_17-08-46.png";
+import p5 from "../../Assets/p7.png";
 // import { Link } from "react-router-dom";
 
 function Card() {
