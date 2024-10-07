@@ -6,6 +6,7 @@ import "../../components/Footer/Footer.css";
 // import footer from "../../components/footer/Foote";
 import Logo from "../../Assets/logo.png"; // تأكد من أن المسار صحيح
 import names from "../../Assets/names.png";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -41,7 +42,7 @@ function Home() {
                 Every Application
               </h2>
             </div>
-          <button className="btn1">Products</button>
+          <Link to="/Products"><button className="btn1">Products</button></Link>
           </div>
         </div>
         <Footer/>

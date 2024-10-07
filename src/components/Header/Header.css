@@ -22,14 +22,33 @@
 }
 .inputname {
   border: 1px;
-  font-size: x-large;
+  font-size: large;
   background: #faf7ab;
   border-radius: 15cap;
   margin-top: 1.5%;
-  right: 9%;
+  height: 45%;
+  width: 58%;
+  padding: 0 2%;
+  /* display: flex;
+  position: absolute; */
+  /* word-wrap: break-word;
+  text-overflow: ellipsis; */
+}
+.forsearch{
+  background-color: antiquewhite;
+  position: absolute;
+  right: 10%;
+  width: 12%;
+  border: 1px;
+  font-size: large;
+  background: #faf7ab;
+  border-radius: 15cap;
+  margin-top: 1.5%;
   height: 45%;
   width: 8%;
   padding: 0 2%;
-  display: flex;
-  position: absolute;
+}
+.bsearch{
+  width: 10px;
+  background: #faf7ab;
 }

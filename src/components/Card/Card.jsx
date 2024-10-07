@@ -10,7 +10,7 @@ import "./Card.css";
 import InfoProd from "../InsertInfoProduct/InfoProd";
 
 const Card = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(true);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   const openModal = () => setModalIsOpen(true);
   const closeModal =()=> setModalIsOpen(false)
   // عرض البيانات من الداتا

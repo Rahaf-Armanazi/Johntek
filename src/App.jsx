@@ -5,14 +5,19 @@ import "./App.css";
 import DashBoard from "./pages/DashBoard/DashBoard";
 import { Router } from "react-router-dom";
 import { Routes, Route, useLocation } from "react-router";
+import Product from "./pages/Product/Product";
+import TermsOfService from "./pages/TermsOfService/TermsOfService";
+import AboutUs from "./pages/AboutUs/AboutUs";
 
 export default function App() {
   return (
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/*  <Footer /> */}
-        <Route path="/Products" element={<DashBoard />} />
+        <Route path="/AboutUs" element={<AboutUs/>}/>
+        <Route path="/Dashboard" element={<DashBoard />} />
+        <Route path="/Products" element={<Product/>}/>
+        <Route path="/Terms" element={<TermsOfService/>}/>
       </Routes>
     </div>
   );

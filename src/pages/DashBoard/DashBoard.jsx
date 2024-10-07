@@ -4,7 +4,6 @@ import Footer from "../../components/Footer/Footer";
 import Card from "../../components/Card/Card";
 import AddProduct from "../../components/AddProduct/AddProduct";
 import "./Dashboard.css";
-import ProductUser from "../../components/CardProductUser/ProductUser";
 
 function DashBoard() {
   return (
@@ -13,9 +12,8 @@ function DashBoard() {
       <div style={{marginTop:"17%"}}>
       <AddProduct/>
       </div>
-      {/* <Card/>
-      <Card/> */}
-      <ProductUser/>
+      <Card/>
+      <Card/>
       <Footer/>
     </div>
   )

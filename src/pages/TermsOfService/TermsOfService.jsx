@@ -1,8 +1,14 @@
 import React from 'react'
+import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer'
 
 function TermsOfService() {
   return (
-    <div>TermsOfService</div>
+    <div>
+      <Header/>
+      <div>TermsOfService</div>
+      <Footer/>
+    </div>
   )
 }
 

@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import p5 from "../../Assets/12333.jpg";
 import p6 from "../../Assets/images__3_-removebg-preview.png";
 import "./ProductUser.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
 const ProductUser = () => {
+  const [infoproCard2,SetIn]=useState([]);
+  useEffect(()=>{
+    const fetchdata=async()=>{
+      try{
+        const res=await axios.get("api");
+        SetIn(res.data);
+      }
+      catch(err){
+        console.log(err);
+      }
+    };
+    fetchdata();
+  },[]);
+  const showinfoCard2=infoproCard2.map((e,index)=>{})
   return (
     <div className="card">
       <div className="C1">
