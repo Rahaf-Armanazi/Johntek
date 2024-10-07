@@ -1,10 +1,10 @@
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+// import Header from "./components/Header/Header";
+// import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home"; // استيراد المكون
 import "./App.css";
 import DashBoard from "./pages/DashBoard/DashBoard";
-import { Router } from "react-router-dom";
-import { Routes, Route, useLocation } from "react-router";
+// import { Router } from "react-router-dom";
+import { Routes, Route} from "react-router";
 import Product from "./pages/Product/Product";
 import TermsOfService from "./pages/TermsOfService/TermsOfService";
 import AboutUs from "./pages/AboutUs/AboutUs";
