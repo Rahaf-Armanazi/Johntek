@@ -4,10 +4,11 @@ import axios from "axios";
 import Modal from "react-modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // استيراد المكون
 import { faTrash, faEdit } from "@fortawesome/free-solid-svg-icons"; // استيراد الأيقونات
-import p4 from "../../Assets/doc_2024-10-01_23-38-20.png";
+// import p4 from "../../Assets/doc_2024-10-01_23-38-20.png";
 import p5 from "../../Assets/٢٠٢٠٠٧٠٣_٠١٢٢٢٣.jpg";
 import "./Card.css";
 import InfoProd from "../InsertInfoProduct/InfoProd";
+import { Delete } from "../Delete/Delete";
 
 const Card = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -24,7 +25,7 @@ const Card = () => {
     getType();
   }, []);
 
-  const showname = productinfo?.map((i, index) => (
+  const showname = productinfo?.map((i) => (
     <div key={i.id}>
       <img className="imageDashboard" src={i.src} alt="helooo i am not heer" />
       <div className="productdetails">
@@ -35,7 +36,7 @@ const Card = () => {
           <p className="productdeDescription">
             {i.paragraph}
           </p>
-          <img className="pdf" src={p5} alt="helooo i am not heer" />
+          <img className="pdf" src={require("../../Assets/images__3_-removebg-preview.png")} alt="helooo i am not heer" />
         </div>
       </div>
     </div>
@@ -72,6 +73,12 @@ const Card = () => {
     getinfo();
   },[id]);
 
+ 
+// for delete 
+  const [modalOpen, setModalOpen] = useState(false);
+  const opendelete = () => setModalOpen(true);
+  const closedelete =()=> setModalOpen(false);
+
   return (
     <div className="card">
       {showname}
@@ -82,16 +89,25 @@ const Card = () => {
         <p className="nameicons1">Edit</p>
         <Modal
         isOpen={modalIsOpen}
-        contentLabel="Add Product Modal"
+        contentLabel="update Product Modal"
         className="popupWindow"
         overlayClassName="modal-overlay"
-      >
+        >
         <InfoProd h1="update the product" name={name} desc={description} image={image} pdf={pdf} endApi={`asd/${id}`} closeModal={closeModal}/>
         </Modal>
-        <div className="iconimage">
+       
+        <div className="iconimage" onClick={opendelete}>
           <FontAwesomeIcon icon={faTrash} size="4x" />
         </div>
         <p className="nameicons2">Delete</p>
+        <Modal
+        isOpen={modalOpen}
+        contentLabel="delete Product Modal"
+        className="popupWindow"
+        overlayClassName="modal-overlay"
+        >
+        <Delete closedelete={closedelete} id={id}/>
+        </Modal>
       </div>
     </div>
   );

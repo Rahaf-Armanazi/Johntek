@@ -1,24 +1,18 @@
-body{
-    background-color: beige;
-}
-#H1privacy{
-text-align: center;
-}
-.privacy{
-    width: 60%;
-    height: 80%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 6px 17px rgb(35 2 2 / 65);
-    margin: 5% 10%;
-    padding: 5% 10%;
+.privacyPolicy{
+    background-color: white;
+    padding: 5% 4%;
+    margin: 6% 11%;
+    margin-top: 18%;
+    box-shadow: 0 25px 32px rgba(38, 2, 2, 0.5);
 }
 
-.text5{
-    /* word-break: break-all;  */
-    white-space: normal;
+#H1privacy{
+    text-align: center;
 }
-.span1{
-    font-size: large;
-    font-weight: bolder;
-  
+.text1{
+    padding:0% 6%  ;
+    overflow-wrap: break-word;
+}
+#pprivacy{
+    padding: 2% 6%;
 }

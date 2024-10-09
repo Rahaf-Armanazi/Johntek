@@ -1,53 +1,47 @@
 import React, { useEffect, useState } from "react";
-import p5 from "../../Assets/12333.jpg";
-import p6 from "../../Assets/images__3_-removebg-preview.png";
 import "./ProductUser.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 const ProductUser = () => {
-  const [infoproCard2,SetIn]=useState([]);
-  useEffect(()=>{
-    const fetchdata=async()=>{
-      try{
-        const res=await axios.get("api");
+  const [infoproCard2, SetIn] = useState([]);
+  useEffect(() => {
+    const fetchdata = async () => {
+      try {
+        const res = await axios.get("http://192.168.43.97:4784/AllProducts");
         SetIn(res.data);
-      }
-      catch(err){
+      } catch (err) {
         console.log(err);
       }
     };
     fetchdata();
-  },[]);
-  const showinfoCard2=infoproCard2.map((e,index)=>{})
-  return (
-    <div className="card">
-      <div className="C1">
-        <img className="imageDashboard" src={p5} alt="helooo i am not heer" />
+  }, []);
+  const showinfoCard2 = infoproCard2?.map((e) => (
+    <div key={e.id}>
+      <div className="C1user">
+        {/* <img c
+        lassName="imageUser" src={e.src} alt="helooo i am not heer" /> */}
       </div>
 
-      <div className="C2">
-        <div className="productdetails">
-          <h1 className="productName">
-            Lift Check Valve with SS screen DN350-1000
-          </h1>
-          <div className="PI">
-            <p className="productdeDescription">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-              ipsum excepturi fuga vel. In pariatur commodi soluta quam deleniti
-              corporis, dicta modi doloribus tempore necessitatibus officiis
-              nesciunt nam perferendis excepturi.{" "}
-            </p>
-            <img className="pdf" src={p6} alt="helooo i am not heer" />
+      <div className="C2user">
+        <div className="productdetailsuser">
+          <h1 className="productNameuser">{e.name}</h1>
+          <div className="PIuser">
+            <p className="productdeDescriptionuser">{e.Description}</p>
+            <img className="pdfuser" src={require("../../Assets/images__3_-removebg-preview.png")}  alt="helooo i am not heer" />
           </div>
         </div>
 
-        <p className="C3">
-          <Link to="/contactUs">Contact Us </Link>
+        <p className="C3user">
+          <Link to="/contactUs" className="linuser">Contact Us </Link>
           to order & inquire about this product
         </p>
       </div>
     </div>
-  );
+  ));
+  return (
+  <div className="Showcard">
+    {showinfoCard2}
+  </div>);
 };
 
 export default ProductUser;

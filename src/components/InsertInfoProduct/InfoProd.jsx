@@ -150,6 +150,12 @@ const InfoProd = (props) => {
                 <p style={{ marginTop: "7%", marginLeft: "6%" }}>select File</p>
               </div>
             </div>
+            {imageUploaded && (
+              <div style={{ marginTop: "10px" }}>
+                <input type="checkbox" checked={imageUploaded} readOnly />
+                <label style={{ marginLeft: "8px" }}></label>
+              </div>
+            )}
           </div>
         </div>
       </div>

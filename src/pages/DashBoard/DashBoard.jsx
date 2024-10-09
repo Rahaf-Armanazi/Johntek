@@ -13,7 +13,6 @@ function DashBoard() {
       <AddProduct/>
       </div>
       <Card/>
-      <Card/>
       <Footer/>
     </div>
   )

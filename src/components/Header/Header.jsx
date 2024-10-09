@@ -10,6 +10,7 @@ function Header() {
   // تعريف حالة للتحكم في إظهار أو إخفاء حقل الإدخال
   const [showInput, setShowInput] = useState(false);
   const [productName, setNamePro] = useState("");
+  // const {productName}=useParams();
   // دالة لتغيير حالة الحقل عند الضغط على الأيقونة
   const handleSearchClick = () => {
     setShowInput(!showInput); // تبديل الحالة بين إظهار أو إخفاء

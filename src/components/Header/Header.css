@@ -2,16 +2,14 @@
   position: fixed;
   box-shadow: 4px 14px 54px rgb(123 119 119);
   top: 0;
-  margin: -0.5%;
-  width: 100%;
-  padding: 17px 63px;
+  width: 99%;
   background: rgb(189 204 216);
   display: flex;
   align-items: center;
-  z-index: 100;
+  justify-content: space-between;
 }
 .Transfers {
-  padding-left: 43%;
+  margin-right: 2%;
 }
 .linksss {
   text-decoration: none;
@@ -51,4 +49,7 @@
 .bsearch{
   width: 10px;
   background: #faf7ab;
+}
+@media(max-){
+
 }

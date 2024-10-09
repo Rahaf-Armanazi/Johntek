@@ -51,7 +51,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  /* z-index: 999; */
 }
 .iconimage {
   cursor: pointer;
@@ -151,12 +151,12 @@ h2 {
 
 .upload-box input[type="file"] {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  cursor: pointer; /* لجعل الزر غير مرئي ولكنه قابل للنقر */
+  top: auto;
+  left: auto;
+  width: 32%;
+  height: 22%;
+  margin-top: 57%;
+  margin-right: 7%;
 }
 
 .upload-box p {
